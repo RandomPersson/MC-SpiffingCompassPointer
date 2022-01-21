@@ -1,0 +1,36 @@
+name: SpiffingCompassPointer
+version: 0.0
+description: Death messages.
+api-version: 1.15
+load: POSTWORLD
+author: RandomPersson
+authors: []
+website: https://discord.gg/RmDbKqq
+
+main: pl.org.mensa.rp.mc.SpiffingCompassPointer.SpiffingCompassPointerPlugin
+database: false
+depend: []
+prefix: 
+softdepend: []
+loadbefore: []
+
+commands:
+  compasstimer:
+    description: 
+    aliases: [ctimer]
+    permission: spiffingcompasspointer.command.compasstimer
+    permission-message: No permission
+    usage: Use /<command> help for more info.
+  compassteps:
+    description: 
+    aliases: [csteps]
+    permission: spiffingcompasspointer.command.compasstimer
+    permission-message: No permission
+    usage: Use /<command> help for more info.
+permissions:
+  spiffingcompasspointer.command.compasstimer:
+    description: Allows use of this command
+    default: false
+  spiffingcompasspointer.command.compassteps:
+    description: Allows use of this command
+    default: false
